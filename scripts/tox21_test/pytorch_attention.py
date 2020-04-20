@@ -170,7 +170,7 @@ def load_split(csv_path, smi_col, label_col, splits):
 
 def train_model(**kwargs):
     global colname, lossname, epoch, modelpath, pad_to, device, saveto
-    train, valid, test = load_split('/data/pycharm_remote_mol2vec/QSAR/classification/tox21/tox21.csv',
+    train, valid, test = load_split('tox21.csv',
                                     'smiles',
                                     colname,
                                     [0.8, 0.1, 0.1])
